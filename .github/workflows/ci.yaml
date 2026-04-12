@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: v24.x
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: lint:code
+        run: pnpm run -r --parallel --aggregate-output lint:code
+
+      - name: lint:fmt
+        run: pnpm run -r --parallel --aggregate-output lint:fmt
+
+      - name: lint:ts
+        run: pnpm run -r --parallel --aggregate-output lint:ts
