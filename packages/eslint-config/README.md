@@ -9,3 +9,11 @@ pnpm add --save-dev @decore/eslint-config eslint
 # or
 yarn add --dev @decore/eslint-config eslint
 ```
+
+## Development
+
+### Building
+
+```bash
+pnpm build
+```
