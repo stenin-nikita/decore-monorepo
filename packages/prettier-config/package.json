@@ -1,0 +1,55 @@
+{
+  "name": "@decore/prettier-config",
+  "version": "0.0.1",
+  "description": "Prettier config",
+  "keywords": ["prettier", "config"],
+  "type": "module",
+  "author": "Nikita Stenin <stenin.nikita@gmail.com>",
+  "license": "MIT",
+  "packageManager": "pnpm@10.33.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stenin-nikita/decore-monorepo.git"
+  },
+  "scripts": {
+    "prepare": "pnpm run build",
+    "build": "tsdown",
+    "fmt": "prettier -w .",
+    "lint:fmt": "prettier -c .",
+    "lint:ts": "tsc --noEmit"
+  },
+  "files": ["lib"],
+  "main": "./lib/index.mjs",
+  "module": "./lib/index.mjs",
+  "types": "./lib/index.d.mts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": {
+        "types": "./lib/index.d.mts",
+        "default": "./lib/index.mjs"
+      },
+      "require": {
+        "types": "./lib/index.d.cts",
+        "default": "./lib/index.cjs"
+      },
+      "default": {
+        "types": "./lib/index.d.mts",
+        "default": "./lib/index.mjs"
+      }
+    }
+  },
+  "peerDependencies": {
+    "prettier": "^3.0.0"
+  },
+  "dependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "prettier": "catalog:",
+    "publint": "catalog:",
+    "tsdown": "catalog:",
+    "typescript": "catalog:"
+  }
+}

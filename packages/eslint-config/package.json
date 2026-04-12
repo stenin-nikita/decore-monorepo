@@ -1,0 +1,76 @@
+{
+  "name": "@decore/eslint-config",
+  "version": "0.0.1",
+  "description": "ESLint config",
+  "keywords": [
+    "eslint",
+    "config"
+  ],
+  "author": "Nikita Stenin <stenin.nikita@gmail.com>",
+  "license": "MIT",
+  "packageManager": "pnpm@10.33.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stenin-nikita/decore-monorepo.git"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "files": [
+    "lib"
+  ],
+  "type": "module",
+  "main": "./lib/index.mjs",
+  "module": "./lib/index.mjs",
+  "types": "./lib/index.d.mts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": {
+        "types": "./lib/index.d.mts",
+        "default": "./lib/index.mjs"
+      },
+      "require": {
+        "types": "./lib/index.d.cts",
+        "default": "./lib/index.cjs"
+      },
+      "default": {
+        "types": "./lib/index.d.mts",
+        "default": "./lib/index.mjs"
+      }
+    }
+  },
+  "scripts": {
+    "prepare": "pnpm build",
+    "build": "tsdown",
+    "fmt": "prettier -w .",
+    "lint:code": "eslint .",
+    "lint:fmt": "prettier -c .",
+    "lint:ts": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "eslint": "^9.23.0 || ^10.0.0",
+    "prettier": ">=3.0.0"
+  },
+  "dependencies": {
+    "@typescript-eslint/parser": "catalog:",
+    "@typescript-eslint/utils": "catalog:",
+    "eslint-config-prettier": "catalog:",
+    "eslint-import-resolver-typescript": "catalog:",
+    "eslint-plugin-import": "catalog:",
+    "eslint-plugin-prettier": "catalog:",
+    "eslint-plugin-react": "catalog:",
+    "eslint-plugin-react-hooks": "catalog:",
+    "jiti": "catalog:",
+    "typescript-eslint": "catalog:"
+  },
+  "devDependencies": {
+    "@decore/prettier-config": "workspace:",
+    "@types/node": "catalog:",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
+    "publint": "catalog:",
+    "tsdown": "catalog:",
+    "typescript": "catalog:"
+  }
+}

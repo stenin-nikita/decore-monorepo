@@ -1,0 +1,14 @@
+{
+  "name": "@decore/monorepo",
+  "private": true,
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "type": "module",
+  "author": "Nikita Stenin <stenin.nikita@gmail.com>",
+  "license": "MIT",
+  "packageManager": "pnpm@10.33.0",
+  "dependencies": {
+    "@decore/prettier-config": "workspace:"
+  }
+}
