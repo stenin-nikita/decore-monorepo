@@ -107,7 +107,7 @@ export default defineConfig({
 ### Building
 
 ```bash
-pnpm run build
+pnpm build
 ```
 
 ## License
