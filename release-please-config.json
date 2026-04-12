@@ -3,11 +3,13 @@
   "release-type": "node",
   "plugins": ["node-workspace"],
   "packages": {
-    "packages/eslint-config": {},
-    "packages/prettier-config": {}
+    "packages/eslint-config": {
+      "package-name": "@decore/eslint-config"
+    },
+    "packages/prettier-config": {
+      "package-name": "@decore/prettier-config"
+    }
   },
-  "include-component-in-tag": false,
-  "include-v-in-tag": true,
   "prerelease": true,
   "versioning": "prerelease",
   "bump-minor-pre-major": true,
