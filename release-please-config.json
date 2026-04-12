@@ -1,17 +1,15 @@
 {
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
   "release-type": "node",
+  "plugins": ["node-workspace"],
   "packages": {
     "packages/eslint-config": {
-      "component": "eslint-config"
+      "component": "@decore/eslint-config"
     },
     "packages/prettier-config": {
-      "component": "prettier-config"
+      "component": "@decore/prettier-config"
     }
   },
-  "pull-request-header": "Auto generated release",
-  "pull-request-title-pattern": "chore: release v${version}",
-  "group-pull-request-title-pattern": "chore: release ${component} v${version}",
   "include-component-in-tag": false,
   "include-v-in-tag": true,
   "prerelease": true,
