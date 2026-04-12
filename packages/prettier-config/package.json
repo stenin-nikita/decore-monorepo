@@ -1,8 +1,11 @@
 {
   "name": "@decore/prettier-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Prettier config",
-  "keywords": ["prettier", "config"],
+  "keywords": [
+    "prettier",
+    "config"
+  ],
   "type": "module",
   "author": "Nikita Stenin <stenin.nikita@gmail.com>",
   "license": "MIT",
@@ -18,7 +21,9 @@
     "lint:fmt": "prettier -c .",
     "lint:ts": "tsc --noEmit"
   },
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "main": "./lib/index.mjs",
   "module": "./lib/index.mjs",
   "types": "./lib/index.d.mts",
