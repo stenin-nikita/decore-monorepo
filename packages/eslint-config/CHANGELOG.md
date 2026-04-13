@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.0.0](https://github.com/stenin-nikita/decore-monorepo/compare/eslint-config-v0.0.3...eslint-config-v1.0.0) (2026-04-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* **eslint-config:** major release
+
+### Features
+
+* **eslint-config:** major release ([2dbdc92](https://github.com/stenin-nikita/decore-monorepo/commit/2dbdc921b53d7630abd50d00054c010312bc73f5))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @decore/prettier-config bumped to 1.0.0
+
 ## [0.0.3](https://github.com/stenin-nikita/decore-monorepo/compare/eslint-config-v0.0.2...eslint-config-v0.0.3) (2026-04-12)
 
 
