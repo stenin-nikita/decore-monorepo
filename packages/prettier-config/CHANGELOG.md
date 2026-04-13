@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.0](https://github.com/stenin-nikita/decore-monorepo/compare/prettier-config-v0.0.3...prettier-config-v1.0.0) (2026-04-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* **prettier-config:** major release
+
+### Features
+
+* **prettier-config:** major release ([88cfa35](https://github.com/stenin-nikita/decore-monorepo/commit/88cfa355aa34d422258d852deaf987310c11e063))
+
 ## [0.0.3](https://github.com/stenin-nikita/decore-monorepo/compare/prettier-config-v0.0.2...prettier-config-v0.0.3) (2026-04-12)
 
 
