@@ -1,5 +1,10 @@
 # @decore/prettier-config
 
+![NPM Version](https://img.shields.io/npm/v/%40decore%2Fprettier-config)
+![NPM Downloads](https://img.shields.io/npm/dm/%40decore%2Fprettier-config)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/%40decore%2Fprettier-config)
+![NPM License](https://img.shields.io/npm/l/%40decore%2Fprettier-config)
+
 A comprehensive Prettier configuration package for modern TypeScript and React projects with intelligent import sorting and consistent code formatting.
 
 ## Installation
