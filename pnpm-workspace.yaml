@@ -6,6 +6,7 @@ allowBuilds:
 
 catalog:
   '@ianvs/prettier-plugin-sort-imports': ^4.7.1
+  '@rolldown/pluginutils': ^1.0.1
   '@types/node': ^24.12.2
   '@typescript-eslint/parser': ^8.58.1
   '@typescript-eslint/utils': ^8.58.1
@@ -18,10 +19,12 @@ catalog:
   eslint-plugin-react-hooks: ^7.0.1
   jiti: ^2.6.1
   prettier: ^3.8.2
-  publint: ^0.3.18
-  tsdown: ^0.21.7
-  typescript: ^6.0.2
+  publint: ^0.3.21
+  srvx: ^0.11.15
+  tsdown: ^0.21.10
+  typescript: ^6.0.3
   typescript-eslint: ^8.58.1
+  vite: ^8.0.14
 
 catalogMode: prefer
 
