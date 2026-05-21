@@ -1,0 +1,1 @@
+export { serverPlugin } from './plugin';
