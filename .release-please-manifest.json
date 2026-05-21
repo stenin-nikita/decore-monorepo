@@ -1,4 +1,5 @@
 {
   "packages/eslint-config": "1.0.0",
-  "packages/prettier-config": "1.0.0"
+  "packages/prettier-config": "1.0.0",
+  "packages/vesta": "0.0.0"
 }

@@ -4,6 +4,7 @@
 
 - `@decore/eslint-config`
 - `@decore/prettier-config`
+- `@decore/vesta`
 
 ## License
 
