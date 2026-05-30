@@ -12,7 +12,11 @@
       "package-name": "@decore/prettier-config"
     },
     "packages/vesta": {
-      "package-name": "@decore/vesta"
+      "package-name": "@decore/vesta",
+      "prerelease": true,
+      "versioning": "prerelease",
+      "bump-minor-pre-major": true,
+      "bump-patch-for-minor-pre-major": true
     }
   },
   "changelog-sections": [
