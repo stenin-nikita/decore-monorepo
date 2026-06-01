@@ -8,7 +8,7 @@ import type { VestaOptions } from './types';
 export function vesta(options?: VestaOptions) {
   const plugins: PluginOption = [];
 
-  if (options?.mode === 'client-server') {
+  if (options?.mode !== 'server-only') {
     plugins.push(reactRefreshPlugin(), manifestPlugin(options?.client?.manifest));
   }
 
