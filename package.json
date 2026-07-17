@@ -9,6 +9,6 @@
   "license": "MIT",
   "packageManager": "pnpm@10.33.0",
   "dependencies": {
-    "@decore/prettier-config": "workspace:"
+    "@decore/prettier-config": "workspace:^"
   }
 }
